@@ -1,0 +1,51 @@
+﻿@{
+	ViewData["Title"] = "Registration form";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form class="register-form">
+	<div class="p-4 bg-light border border-dark rounded-3 shadow-lg">
+		<div class="Register-icon">
+			<img src="~/images/register-img.png" alt="image not found" />
+		</div>
+		<h1 class="mb-3 text-center">Registration</h1>
+		<div class="name mb-3">
+			<div class="w-50">
+				<label class="form-label">First Name</label>
+				<input type="text" class="form-control" id="firstName">
+			</div>
+
+			<div class="w-50">
+				<label class="form-label">Last Name</label>
+				<input type="text" class="form-control" id="lastName">
+			</div>
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Address</label>
+			<input type="text" class="form-control" id="address" placeholder="House:1/A, Road:1, Sector:1">
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Phone</label>
+			<input type="text" class="form-control" id="phone">
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Email address</label>
+			<input type="email" class="form-control" id="email" placeholder="name@gmail.com" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label">NID Number</label>
+			<input type="text" class="form-control" id="nid" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Password</label>
+			<input type="password" class="form-control" id="password" placeholder="use digit,character and special character" />
+		</div>
+		<div class="mb-5">
+			<label class="form-label">Confirm Password</label>
+			<input type="password" class="form-control" id="confirmPassword" />
+		</div>
+		<button type="button" class="form-control bg-success rounded-pill mb-4">Register</button>
+
+	</div>
+</form>
+
+
